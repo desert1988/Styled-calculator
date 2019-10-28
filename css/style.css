@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100);
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+
+
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em;
+  font-size: 2em;
+  background-color: #bbb;
+}
+
+p {
+	height: 25px;
+    width: 314px;
+}
+
+button{
+  margin: 0px 10px 0px 0px;
+  float: left;
+  width: 70px;
+  height: 26px;
+  background-color: #eeeeee;
+}
+
+.calculator {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 300px;
+  box-shadow: 0px 3px 10px 3px #aaa;
+  border-right: 0.01em solid #333;
+  border-bottom: 0.01em solid #333;
+}
+
+.result {
+  width: 100%;
+  background-color: rgba(50, 30, 0, 0.8);
+  min-height: 2em;
+  color: white;
+}
+
+.result > p {
+  padding: 0 1em;
+  text-align: right;
+  line-height: 2em;
+}
+
+span {
+  box-sizing: border-box;
+  text-align: center;
+  cursor: pointer;
+  width: 25%;
+  background-color: rgba(50, 30, 0, 0.48);
+  line-height: 2em;
+  border-top: 0.01em solid #333;
+  border-left: 0.01em solid #333;
+}
+
+.operator {
+  background-color: #FF9500;
+  color: white;
+}
+
+.double {
+  width: 50%;
+}
+
+.secbtn {
+  background-color: rgba(50, 30, 0, 0.64);
+  color: white;
+}
+.lbtn {
+  color: white;
+}
+/*using js for add class with color on click
+/* .clicked {
+  background-color: #cc8400;
+} */
+
+/*CSS internal on click-change implementation:
+*/
+.operator:active{
+	background-color: #cc8400;
+}
+.secbtn:active{
+	background-color: rgba(50, 30, 0, 0.48);
+}
+
+.lbtn:active{
+	background-color: rgba(50, 30, 0, 0.38);
+}
